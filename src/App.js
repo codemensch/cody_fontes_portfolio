@@ -1,14 +1,14 @@
-import logo from './logo.svg';
+import Main from './components/main/Main';
+import Footer from './components/footer/Footer';
 import './App.css';
 
-function Header() {
-  return (
-    <h1>This is a heading</h1>
-  );
-}
-
 function App() {
-  return <Header />;
+  return (
+    <>
+      <Main />
+      <Footer />
+    </>
+  );
 }
  
 export default App;
