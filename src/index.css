@@ -6,7 +6,10 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #606366;
+  background-image:url('./assets/images/cody-c-transparent.png');
+  background-repeat: no-repeat;
   background-color: #d8dfe5;
+  padding-top: 10rem;
 }
 
 code {
