@@ -1,0 +1,12 @@
+.app-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+.logo {
+    height: 4.5em;
+    margin-top: 1.5em;
+    margin-left: 1em;
+}

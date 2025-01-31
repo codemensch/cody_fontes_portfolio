@@ -1,15 +1,18 @@
-import Main from './components/main/Main';
-import Footer from './components/footer/Footer';
+import Main from './components/Main/Main';
+import Footer from './components/Footer/Footer';
 import './App.css';
 import logo from './assets/images/cody-c.png';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Header from './components/Header/Header';
 
 function App() {
   return (
     <>
-      <header className="header">
-        {/* <img src={logo} className="logo" alt="logo" /> */}
-      </header>
-      <Main />
+      <div className="app-container">
+        <Header />
+        <Main />
+      </div>
       <Footer />
     </>
   );
