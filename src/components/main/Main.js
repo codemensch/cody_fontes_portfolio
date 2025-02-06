@@ -14,21 +14,23 @@ function Main() {
                     </header>
                 </Col>
             </Row>
-            <Row className='section-container'>
-                <Col md={12}>
-                    <h2>projects</h2>
-                </Col>
-            </Row>
-            <Row className='section-container'>
-                <Col md={12}>
-                    <h2>education</h2>
-                </Col>
-            </Row>
-            <Row className='section-container'>
-                <Col md={12}>
-                    <h2>about</h2>
-                </Col>
-            </Row>
+            <div className='main-content'>
+                <Row className='section-container'>
+                    <Col md={12}>
+                        <h2>projects</h2>
+                    </Col>
+                </Row>
+                <Row className='section-container'>
+                    <Col md={12}>
+                        <h2>education</h2>
+                    </Col>
+                </Row>
+                <Row className='section-container'>
+                    <Col md={12}>
+                        <h2>about</h2>
+                    </Col>
+                </Row>
+            </div>
         </Container>
     );
 }
