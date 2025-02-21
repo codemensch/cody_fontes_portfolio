@@ -1,5 +1,5 @@
 # What is this page for?
-This is a portfolio page highlighting projects that are or will be available on my GitHub profile (https://github.com/codemensch). My original page was built with vanilla javascript and jQuery. This iteration will be rebuilt with React.js.
+This is a portfolio page highlighting projects that are or will be available on my GitHub profile (https://github.com/codemensch) and will be replacing my current page at https://codemensch.github.io/. My original page was built with vanilla javascript and jQuery. This iteration will be rebuilt with React.js.
 
 # Getting Started with Create React App
 
