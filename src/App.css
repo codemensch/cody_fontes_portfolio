@@ -1,3 +1,8 @@
-.app-container {
+.main-container {
   padding: 10em 5em 0em 5em;
+}
+
+.dark-style {
+  color: #44474a;
+  background-color: #c0c6cc;
 }

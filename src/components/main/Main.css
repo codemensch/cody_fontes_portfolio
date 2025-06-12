@@ -11,3 +11,8 @@
     padding-top: 2em;
     padding-bottom: 2em;
 }
+
+.about-image {
+    border-radius: 100%;
+    max-width: 20em;
+}
