@@ -8,14 +8,24 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 2rem;
 }
 
 .experience-title-icon {
   display: inline-block;
+  margin-right: 1rem;
 }
 
-.experience-status-icon {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+.experience-heading {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+}
+
+.experience-linkedin-link {
+  display: flex;
+  text-decoration: none;
+}
+
+.experience-linkedin-link-text {
+  margin-right: 1rem;
 }

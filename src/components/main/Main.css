@@ -1,3 +1,7 @@
+header {
+    padding-bottom: 15em;
+}
+
 .main-container {
     padding-left: 8em;
     padding-right: 8em;
@@ -15,4 +19,8 @@
 .about-image {
     border-radius: 100%;
     max-width: 20em;
+}
+
+.section-container {
+    margin-bottom: 10rem;
 }

@@ -1,22 +1,37 @@
 .footer-container {
     background-color: #c0c6cc;
     width: 100%;
-    height: 28em;
+    height: 100%;
     p {
         color: #383a3d;
     }
 }
 
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2.5rem 0 2.5rem 0;
+}
+
 .logo-image {
-    max-width: 15em;
+    width: 10rem;
+}
+
+.footer-heading {
+    margin: 2.5rem 0 8rem 0;
+    font-size: 2rem;
 }
 
 .footer-links {
     list-style-type: none;
     display: inline-flex;
+    padding-inline-start: 0;
+    margin-block-end: 0;
 
     .middle-link {
-        margin-left: 1em;
-        margin-right: 1em;
+        margin-left: 5rem;
+        margin-right: 5rem;
     }
 }
