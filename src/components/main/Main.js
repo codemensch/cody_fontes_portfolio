@@ -1,10 +1,36 @@
 import './Main.css'
 import headshot from '../../assets/images/cody_headshot_square.png';
+
 import Container from 'react-bootstrap/Container';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
+// Projects Icons
+import { HousesFill } from 'react-bootstrap-icons';
+// Experiences Icons
+import { Laptop } from 'react-bootstrap-icons';
+
 import Project from './Project/Project';
 import Experience from './Education/Experience';
+
+const projects = [
+    {
+        name: "real-estate",
+        link: "https://liveproject.com",
+        icon: HousesFill,
+        label: "Tax Real Estate API"
+    }
+];
+
+const experiences = [
+    {
+        name: "work",
+        icon: Laptop,
+        heading1: "Front-End",
+        heading2: "Engineering",
+        description: "4+ Years Enterprise-level UI Engineering experience at VMware. Experience in: feature development, code testing and pipeline management.",
+        link: "https://liveproject.com",
+    }
+];
 
 function Main() {
     return (
@@ -21,13 +47,22 @@ function Main() {
                 {/* Projects */}
                 <div className='section-container'>
                     <h2>projects</h2>
-                    <Project />
+                    {
+                        projects.map((project) => {
+                            return <Project link={project.link} icon={project=project.icon} label={project.label} />
+                        })
+                    }
                 </div>
 
                 {/* Experience */}
                 <div className='section-container'>
-                    <h2>experience | education</h2>
-                    <Experience />
+                    <h2>experiences</h2>
+                    {
+                        experiences.map((experience) => {
+                            return <Experience icon={experience.icon} heading1={experience.heading1} heading2={experience.heading2} description={experience.description} link={experience.link} />
+                        })
+                    }
+                    
                 </div>
 
                 {/* About */}
