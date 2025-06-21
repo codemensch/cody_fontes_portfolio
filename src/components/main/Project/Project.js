@@ -1,10 +1,9 @@
 import './Project.css';
-import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 import { HousesFill } from 'react-bootstrap-icons';
 
-function setProjectIcon(iconProp) {
+function selectProjectIcon(iconProp) {
     switch (iconProp) {
         case HousesFill:
             return <HousesFill size={60} className='project-icon' />;
@@ -15,16 +14,14 @@ function setProjectIcon(iconProp) {
 
 function Project(props) {
     return (
-        <Row>
-            <Col md={4}>
-                <a href={props.link} target="_blank" rel="noreferrer" className='project-link dark-style'>
-                    {
-                        setProjectIcon(props.icon)
-                    }
-                </a>
-                <h3>Cool Project</h3>
-            </Col>
-        </Row>
+        <Col md={4} className="project-container">
+            <a href={props.link} target="_blank" rel="noreferrer" className='project-link dark-style'>
+                {
+                    selectProjectIcon(props.icon)
+                }
+            </a>
+            <h3>Cool Project</h3>
+        </Col>
     );
 }
 

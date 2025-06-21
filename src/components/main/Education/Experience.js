@@ -14,24 +14,22 @@ function setExperienceIcon(iconProp) {
 
 function Experience(props) {
     return (
-        <Row>
-            <Col md={4}>
-                <div className="experience-container dark-style">
-                    <div className="experience-title">
-                        {
-                            setExperienceIcon(props.icon)
-                        }
-                        {/* <Laptop size={40} className='experience-title-icon' /> */}
-                        <h3 className='experience-heading'>{props.heading1}<br></br>{props.heading2}</h3>
-                    </div>
-                    <p>{props.description}</p>
-                    <a href={props.link} target="_blank" rel="noreferrer" className='experience-linkedin-link'>
-                        <p className='experience-linkedin-link-text inline-block'>My LinkedIn</p>
-                        <BoxArrowUpRight size={20} className='experience-linkedin-link-icon inline-block' />
-                    </a>
+        <Col md={4}>
+            <div className="experience-container dark-style">
+                <div className="experience-title">
+                    {
+                        setExperienceIcon(props.icon)
+                    }
+                    {/* <Laptop size={40} className='experience-title-icon' /> */}
+                    <h3 className='experience-heading'>{props.heading1}<br></br>{props.heading2}</h3>
                 </div>
-            </Col>
-        </Row>
+                <p>{props.description}</p>
+                <a href={props.link} target="_blank" rel="noreferrer" className='experience-linkedin-link'>
+                    <p className='experience-linkedin-link-text inline-block'>My LinkedIn</p>
+                    <BoxArrowUpRight size={20} className='experience-linkedin-link-icon inline-block' />
+                </a>
+            </div>
+        </Col>
     );
 }
 

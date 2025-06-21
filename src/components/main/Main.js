@@ -18,6 +18,24 @@ const projects = [
         link: "https://liveproject.com",
         icon: HousesFill,
         label: "Tax Real Estate API"
+    },
+    {
+        name: "real-estate",
+        link: "https://liveproject.com",
+        icon: HousesFill,
+        label: "Tax Real Estate API"
+    },
+    {
+        name: "real-estate",
+        link: "https://liveproject.com",
+        icon: HousesFill,
+        label: "Tax Real Estate API"
+    },
+    {
+        name: "real-estate",
+        link: "https://liveproject.com",
+        icon: HousesFill,
+        label: "Tax Real Estate API"
     }
 ];
 
@@ -29,7 +47,23 @@ const experiences = [
         heading2: "Engineering",
         description: "4+ Years Enterprise-level UI Engineering experience at VMware. Experience in: feature development, code testing and pipeline management.",
         link: "https://liveproject.com",
-    }
+    },
+    {
+        name: "work",
+        icon: Laptop,
+        heading1: "Front-End",
+        heading2: "Engineering",
+        description: "4+ Years Enterprise-level UI Engineering experience at VMware. Experience in: feature development, code testing and pipeline management.",
+        link: "https://liveproject.com",
+    },
+    {
+        name: "work",
+        icon: Laptop,
+        heading1: "Front-End",
+        heading2: "Engineering",
+        description: "4+ Years Enterprise-level UI Engineering experience at VMware. Experience in: feature development, code testing and pipeline management.",
+        link: "https://liveproject.com",
+    },
 ];
 
 function Main() {
@@ -47,22 +81,25 @@ function Main() {
                 {/* Projects */}
                 <div className='section-container'>
                     <h2>projects</h2>
-                    {
-                        projects.map((project) => {
-                            return <Project link={project.link} icon={project=project.icon} label={project.label} />
-                        })
-                    }
+                    <Row>
+                        {
+                            projects.map((project) => {
+                                return <Project link={project.link} icon={project=project.icon} label={project.label} />
+                            })
+                        }
+                    </Row>
                 </div>
 
                 {/* Experience */}
                 <div className='section-container'>
                     <h2>experiences</h2>
-                    {
-                        experiences.map((experience) => {
-                            return <Experience icon={experience.icon} heading1={experience.heading1} heading2={experience.heading2} description={experience.description} link={experience.link} />
-                        })
-                    }
-                    
+                    <Row>
+                        {
+                            experiences.map((experience) => {
+                                return <Experience icon={experience.icon} heading1={experience.heading1} heading2={experience.heading2} description={experience.description} link={experience.link} />
+                            })
+                        }
+                    </Row>
                 </div>
 
                 {/* About */}

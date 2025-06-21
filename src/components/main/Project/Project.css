@@ -1,8 +1,12 @@
+.project-container {
+    margin-bottom: 2rem;
+}
+
 .project-link {
     display: block;
     width: 100%;
-    padding-top: 2em;
-    padding-bottom: 2em;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     margin-bottom: .5rem;
 }
 
